@@ -259,8 +259,8 @@ farewell(en, "Thank you for using WazeLog!").
 user_title(Title) :-
 	lang(Lang),
 	user_title(Lang, Title).
-user_title(es, "Usuario").
-user_title(en, "User").
+user_title(es, "You").
+user_title(en, "You").
 
 
 % ---- Display Ruta ----

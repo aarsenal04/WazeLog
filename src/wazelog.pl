@@ -8,7 +8,7 @@
 
 % ---- User Interface ----
 wazelog_writeln(Msg) :-
-	format(" WazeGPT :| ~s :|\n", [Msg]).
+	format(" WazeGPT : ~s 	\n", [Msg]).
 
 % Add spacing between outputs
 spacing :-
@@ -31,7 +31,7 @@ string_repeat(Base, Times, Repeated) :-
 
 read_user_input(Result) :-
 	user_title(Title),
-	format("@~s: ", [Title]),
+	format("~s: ", [Title]),
 	current_input(Stdin),
 	read_string(Stdin, "\n", "\r\t ", _, Text), 
 	parse_user_input(Text, ParseResult),
